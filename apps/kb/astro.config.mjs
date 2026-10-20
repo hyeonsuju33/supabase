@@ -8,6 +8,7 @@ import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'astro/config'
 
+import supabaseTheme from '../learn/lib/themes/supabase-2.json' with { type: 'json' }
 import { BASE_PATH } from './src/lib/constants.ts'
 import rehypeAdmonitions from './src/lib/mdx/rehype-admonitions.js'
 import { sharedCodeBlock } from './src/lib/mdx/shiki-code-block.ts'
