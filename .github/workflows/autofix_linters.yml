@@ -16,7 +16,7 @@ concurrency:
 jobs:
   format:
     name: Format PR without write credentials
-    runs-on: blacksmith-2vcpu-ubuntu-2404
+    runs-on: xenoci-2vcpu-ubuntu-2404
     if: ${{ github.event_name == 'pull_request' && (github.event.label.name == 'autofix') }}
     outputs:
       changed: ${{ steps.create-patch.outputs.changed }}
@@ -72,7 +72,7 @@ jobs:
   push:
     name: Commit autofix updates
     needs: format
-    runs-on: blacksmith-2vcpu-ubuntu-2404
+    runs-on: xenoci-2vcpu-ubuntu-2404
     if: >-
       ${{
         needs.format.outputs.changed == 'true' &&

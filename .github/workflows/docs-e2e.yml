@@ -39,7 +39,7 @@ jobs:
     name: Docs E2E
     if: github.event_name == 'workflow_dispatch' || github.event.pull_request.draft == false
     timeout-minutes: 30
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: xenoci-2vcpu-ubuntu-2404
 
     steps:
       # Runs before checkout — reads the PR file list from the API. `docs`
