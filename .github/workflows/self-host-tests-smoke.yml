@@ -2,7 +2,7 @@ name: Self-Host Tests Smoke
 
 on:
   pull_request:
-    branches: ['master']
+    branches: ['master', 'pr-train', 'xeno-base']
     paths:
       - 'docker/**/*'
 

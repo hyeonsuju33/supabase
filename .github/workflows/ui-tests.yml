@@ -2,7 +2,7 @@ name: UI Tests
 
 on:
   pull_request:
-    branches: [master]
+    branches: [master, 'pr-train', 'xeno-base']
 
 # Cancel old builds on new commit for same workflow + branch/PR
 concurrency:

@@ -3,6 +3,8 @@ name: Ratchet studio lint checks
 on:
   pull_request:
     branches:
+      - 'pr-train'
+      - 'xeno-base'
       - master
     paths:
       - 'apps/studio/**'
