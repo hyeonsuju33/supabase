@@ -14,7 +14,7 @@ on:
       - 'packages/ui-patterns/**'
       - 'pnpm-lock.yaml'
   pull_request:
-    branches: [master, studio]
+    branches: [master, studio, 'pr-train', 'xeno-base']
 
 # Cancel old builds on new commit for same workflow + branch/PR
 concurrency:

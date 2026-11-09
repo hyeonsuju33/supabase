@@ -3,6 +3,8 @@ name: Check code with TypeScript & Lint
 on:
   pull_request:
     branches:
+      - 'pr-train'
+      - 'xeno-base'
       - 'master'
   merge_group:
 
